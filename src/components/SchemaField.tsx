@@ -20,7 +20,7 @@ interface Props {
   path: string;
 }
 
-export const SchemaField = ({ nestIndex, field, removeField, path }: Props) => {
+export const SchemaField = ({ nestIndex, removeField, path }: Props) => {
   const { register, control, setValue, watch } = useFormContext();
 
   const fieldPath = `${path}`;
